@@ -1,0 +1,12 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class "Инженер" as P {
+ Инструменты для сборки компьютера
+Собрать (комплектующие по заявке клиента): компьютер
+}
+hide circle
+@enduml

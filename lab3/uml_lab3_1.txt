@@ -1,0 +1,12 @@
+@startuml
+actor "Администратор" as owner
+boundary "Договор" as doc
+entity "Данные" as data
+actor "Преподаватель" as teacher
+owner -> doc : Запрос
+doc -> data : Данные студента
+data -> doc : Ответ
+doc -> teacher: Требования
+teacher-> doc : Подтверждение
+doc -> owner : Студент принят
+@enduml

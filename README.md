@@ -24,6 +24,7 @@ IDF0-диаграмма: Изучение английского языка
 
 ![pic](https://github.com/KomaR1/Stonks/blob/main/lab2/ramus-2-2.png)
 DFD "Заключение договора":
+![pic](https://github.com/KomaR1/Stonks/blob/main/lab2/ramus-2-3.png)
 Usecase diagram
 ![pic](https://github.com/KomaR1/Stonks/blob/main/lab2/usecase3.png)
 ## Лабораторная 3

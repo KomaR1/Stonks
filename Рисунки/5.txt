@@ -1,0 +1,56 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+hide circle
+hide methods
+
+class Users {
+   id_u : bigserial
+   login : string
+   pass : string
+   access : number
+   fio : string
+   phone : integer
+}
+class Operators{
+   id_u : bigserial
+   login : string
+   pass : string
+   access : number
+   fio : string
+   phone : integer
+   place : string
+}
+
+class Orders{
+   id_t : bigserial
+   autor : number
+   operator : string
+   date_create: date
+   date_complete: date
+   resources : string
+   quantity : number
+   stage: number
+   place : string
+   costs : number
+   payment_type : string
+   delivery_type : string
+   comments : string
+}
+
+class Resources {
+   id_r : bigserial
+   name_r : string
+   material : string
+   cost_per_gram : number
+   quantity : number
+   place : string
+}
+
+Users --* Orders
+Operators --* Orders
+Resources --* Orders
+@enduml

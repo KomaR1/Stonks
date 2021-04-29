@@ -1,0 +1,37 @@
+@startuml
+skinparam monochrome true
+
+actor Клиент as u
+participant "Фронтенд" as f
+participant "Бэкенд" as b
+database "База данных" as d
+
+u -> f : Запрос на создание\nмодели
+activate f
+f -> f : Открыть страницу\nвхода/регистрации личного\nкабинета
+u -> f : Отправка данных на создание личного кабинета
+f -> f : Проверка ввода данных
+f -> b : Обработанные данные\nпользователя
+activate b
+b -> d : Запрос на проверку данных в БД
+activate d
+d -> d : Запись данных
+d -> b : Ответ об успешной записи
+deactivate d
+b -> f : Текстовая строка
+deactivate b
+f -> u : Сообщение о принятой\nзаявке и создании\nличного кабинета
+deactivate f
+
+u -> f : Вход в систему
+activate f
+f -> b : Данные пользователя
+activate b
+b -> d : Запрос на проверку данных
+activate d
+d -> b : Ответ от БД
+deactivate d
+b -> f : Разрешение на вход
+f -> u : Отображение статуса заявки в личном кабинете
+deactivate f
+@enduml

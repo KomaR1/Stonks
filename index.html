@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диаграммы</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .page-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #999;
+            padding: 8px 16px;
+            width: 100vw;
+
+            background-color: #121212;
+            color: white;
+        }
+
+        .page-header__anchor {
+            color: white;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .page-content {
+            column-gap: 8px;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 8px;
+
+            padding: 16px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .lab-card {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lab-card__description {
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            padding: 8px;
+        }
+
+        .img-container {
+            background-position: center;
+            background-size: 100%;
+            height: 300px;
+        }
+
+        .idef0-background {
+            background-image: url('https://github.com/creazero/creazero.github.io/blob/main/thesis/model0.png?raw=true');
+        }
+
+        .dfd-background {
+            background-image: url('https://github.com/creazero/creazero.github.io/blob/main/thesis/dfd1_2.png?raw=true');
+        }
+
+        .usecase-background {
+            background-image: url('https://github.com/creazero/creazero.github.io/blob/main/thesis/usecase.png?raw=true');
+            background-size: 150%;
+        }
+
+        .class-background {
+            background-image: url('https://raw.githubusercontent.com/creazero/creazero.github.io/main/thesis/class.png');
+            background-size: 150%;
+        }
+
+        .sequence-background {
+            background-image: url('https://raw.githubusercontent.com/creazero/creazero.github.io/main/thesis/sequence.png');
+            background-size: 150%;
+        }
+
+        .component-background {
+            background-image: url('https://raw.githubusercontent.com/creazero/creazero.github.io/main/thesis/component.png');
+            background-size: cover;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            .page-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .page-content {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+</body>
+<header class='page-header'>
+    <h2>Курсовая работа</h2>
+    <a class='page-header__anchor' href="https://github.com/creazero/creazero.github.io">
+        <h3>Github</h3>
+    </a>
+</header>
+
+<main class='page-content'>
+    <div class='lab-card'>
+        <div class='img-container idef0-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                IDEF0 Диаграммы
+            </a>
+        </section>
+    </div>
+
+    <div class='lab-card'>
+        <div class='img-container dfd-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                DFD Диаграммы
+            </a>
+        </section>
+    </div>
+
+    <div class='lab-card'>
+        <div class='img-container usecase-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                Usecase диаграмма
+            </a>
+        </section>
+    </div>
+
+    <div class='lab-card'>
+        <div class='img-container class-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                ERD (Class) Диаграмма
+            </a>
+        </section>
+    </div>
+
+    <div class='lab-card'>
+        <div class='img-container sequence-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                Sequence диаграмма
+            </a>
+        </section>
+    </div>
+
+    <div class='lab-card'>
+        <div class='img-container component-background'></div>
+        <section class='lab-card__description'>
+            <a
+                href='https://github.com/KomaR1/Stonks/wiki/%D0%9A%D1%83%D1%80%D1%81%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82'>
+                Component Диаграмма
+            </a>
+        </section>
+    </div>
+</main>
+
+</html>
